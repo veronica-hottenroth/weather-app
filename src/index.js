@@ -26,6 +26,7 @@ function showTemperature(response) {
   let minTemp = document.querySelector("#min-today");
   let humid = document.querySelector("#humidity-today");
   let feels = document.querySelector("#feels-like");
+  let icon = document.querySelector("#icon");
 
   temp.innerHTML = `${temperature}°F`;
   element.innerHTML = city;
@@ -33,6 +34,10 @@ function showTemperature(response) {
   minTemp.innerHTML = `Low ${min}°F`;
   humid.innerHTML = `Humidity: ${humidity}%`;
   feels.innerHTML = `Feels like ${feelsLike}°F`;
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 let searchButton = document.querySelector("#button-input");

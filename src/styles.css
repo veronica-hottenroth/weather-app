@@ -1,18 +1,19 @@
 img {
   text-align: left;
-  vertical-align: middle;
-  width: 45px;
+  vertical-align: bottom;
+  width: 100px;
 }
 .todays-values {
   font-family: "Poppins", sans-serif;
   text-align: left;
-  font-size: 20px;
+  font-size: 18px;
+  color: grey;
 }
 
 .current-temp {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
-  text-align: center;
+  text-align: left;
 }
 
 .current-city {
@@ -25,12 +26,14 @@ img {
   width: 100%;
   display: inline;
   vertical-align: middle;
+  text-align: center;
 }
 
 .input-search {
   width: 100%;
   display: inline;
   vertical-align: middle;
+  text-align: center;
 }
 
 .last-updated {
