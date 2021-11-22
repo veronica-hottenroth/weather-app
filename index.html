@@ -22,108 +22,57 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="row p-3 mx-auto">
-        <form class="search-form" id="search-form">
-          <div class="col-sm-4">
-            <input
-              class="form-control input-form"
-              type="text"
-              placeholder="Enter city"
-              id="search-input"
-            />
-          </div>
-          <div class="col-sm-4">
-            <input
-              class="btn btn-primary input-search"
-              type="submit"
-              value="Search"
-              id="button-input"
-            />
-          </div>
-        </form>
-      </div>
+    <div class="container mx-auto">
+      <form class="search-form" id="search-form">
+        <div class="col-4 mt-1">
+          <input
+            class="form-control input-form"
+            type="text"
+            placeholder="Enter city"
+            id="search-input"
+          />
+        </div>
+        <div class="col-4 mt-1">
+          <input
+            class="btn btn-primary input-search"
+            type="submit"
+            value="Search"
+            id="button-input"
+          />
+        </div>
+      </form>
 
-      <div class="p-3 mb-2 bg-light text-dark">
-        <div class="row">
-          <div class="col" id="current-day">Nov 3</div>
+      <div class="row border border-primary mt-2 p-2 rounded">
+        <div class="col-2">
+          <img src="images/rain_light.png" alt="Light rain"> </img> 
+        </div>
+        <div class="col-2">
+          <div class="current-temp" id="current-temp">74°F </div>
         </div>
 
-        <div class="row">
-          <div class="col">
-            <span class="current-city" id="current-city">Austin, Texas </span>
-          </div>
+        <div class="col-4">
+          <div class="todays-values" id="feels-like">Feels like 83°F</div>
+          <div class="todays-values" id="humidity-today">90%</div>
+          <div class="todays-values" id="max-today">74°F</div>
+          <div class="todays-values" id="min-today">52°F</div>
         </div>
 
-        <div class="row">
-          <div class="col">
-            <span class="current-temp" id="current-temp">74°F </span>
-          </div>
-          <div class="col">
-            <span class="feels-like" id="feels-like"> Feels like 83°F </span>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-3">
-            <span class="todays-values" id="max-today"> 74°F</span>
-          </div>
-          <div class="col-3">
-            <span class="todays-values" id="min-today"> 52°F </span>
-          </div>
-          <div class="col-6">
-            <span class="todays-values" id="humidity-today">90%</span>
-          </div>
+        <div class="col-4">
+          <div class="current-city" id="current-city">Austin</div>
+          <div class="col last-updated" id="current-day">Monday 11:30</div>
         </div>
       </div>
 
-      <h4>
+      <div class="footer p-1">
         <a
           href="https://github.com/veronica-hottenroth/weather-app"
           target="_blank"
           >Open source code</a
         >
         by Veronica Hottenroth
-      </h4>
+      </div>
     </div>
 
     <script src="src/index.js"></script>
   </body>
 </html>
-
-<!--      </br>
-        <div class="row border-top border-info p-3 row-hover"> 
-          <div class="col-3"> <span class="day">Thurs</span></div>
-          <div class="col-3"> <span class="body-temps"> 65°F </span></div>
-          <div class="col-3"> <span class="body-temps"> 52°F </span></div>
-          <div class="col-3"> <img src="images/rain_light.png" alt="Light rain"> <span> <span class = "percent">90%</span></div>
-        </div> 
-
-        <div class="row border-top border-info p-3 row-hover"> 
-          <div class="col-3"> <span class="day">Fri</span></div>
-          <div class="col-3"> <span class="body-temps"> 60°F </span></div>
-          <div class="col-3"> <span class="body-temps"> 53°F </span></div>
-          <div class="col-3"> <img src="images/partly_cloudy.png" alt="Partly cloudy"></div>
-        </div> 
-
-        <div class="row border-top border-info p-3 row-hover"> 
-          <div class="col-3"> <span class="day">Sat</span></div>
-          <div class="col-3"> <span class="body-temps"> 72°F </span></div>
-          <div class="col-3"> <span class="body-temps"> 65°F</span></div>
-          <div class="col-3"> <img src="images/sunny.png" alt="sunny"></div>
-        </div> 
-        
-
-        <div class="row border-top border-info p-3 row-hover"> 
-          <div class="col-3"> <span class="day">Sun</span></div>
-          <div class="col-3"> <span class="body-temps"> 75°F </span></div>
-          <div class="col-3"> <span class="body-temps"> 60°F </span></div>
-          <div class="col-3"> <img src="images/cloudy.png" alt="Cloudy"></div>
-        </div> 
-            
-        <div class="row border-top border-info p-3 row-hover"> 
-          <div class="col-3"> <span class="day">Mon</span></div>
-          <div class="col-3"> <span class="body-temps"> 60°F </span></div>
-          <div class="col-3"> <span class="body-temps"> 50°F</span></div>
-          <div class="col-3"> <img src="images/rain_light.png" alt="light rain"><span> <span class = "percent">60%</span></div>
-        </div>  -->

@@ -1,31 +1,12 @@
-h1 {
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-}
-
-h4 {
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  font-size: small;
-}
-
-body {
-  text-align: center;
-}
-
 img {
-  text-align: right;
-  box-shadow: 3px 3px 2px 1px rgba(13, 202, 240, 0.2);
+  text-align: left;
   vertical-align: middle;
   width: 45px;
 }
 .todays-values {
   font-family: "Poppins", sans-serif;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 25px;
-  margin-top: 20px;
-  font-style: italic;
+  text-align: left;
+  font-size: 20px;
 }
 
 .current-temp {
@@ -34,31 +15,10 @@ img {
   text-align: center;
 }
 
-.feels-like {
-  font-family: "Poppins", sans-serif;
-  font-size: 30px;
-  text-align: center;
-}
-
 .current-city {
   font-family: "Poppins", sans-serif;
-  font-size: 50px;
-  text-align: center;
-}
-.body-temps {
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  margin-top: 20px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.day {
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-weight: bolder;
-  text-align: center;
+  font-size: 30px;
+  text-align: right;
 }
 
 .input-form {
@@ -73,18 +33,14 @@ img {
   vertical-align: middle;
 }
 
-.row-hover:hover {
-  background-color: #f8f9fa;
-  opacity: 90%;
-  color: black;
-  font-weight: bolder;
-  font-size: 20px;
+.last-updated {
+  text-align: right;
+  font-size: small;
+  color: grey;
 }
 
-.percent {
-  display: block;
+.footer {
   font-family: "Poppins", sans-serif;
+  text-align: left;
   font-size: small;
-  margin-top: 3px;
-  font-style: italic;
 }
