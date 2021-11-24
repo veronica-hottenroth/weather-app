@@ -50,25 +50,38 @@
       </form>
 
       <div class="row border border-primary mt-3 p-2 rounded">
+      
         <div class="col px-1">
-          <img id = "icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="none"> </img> 
+          <img id = "icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="none" class = "icon-now"> </img> 
         </div>
+      
         <div class="col px-1">
-          <div class="current-temp" id="current-temp">74 F° </div>
-        
+          <div class="current-temp" id="current-temp"></div>
         </div>
 
         <div class="col pl-4">
-          <div class="todays-values" id="feels-like">Feels like 83°F</div>
-          <div class="todays-values" id="humidity-today">Humidity 90%</div>
-          <div class="todays-values" id="max-today">High 74°F</div>
-          <div class="todays-values" id="min-today">Low 52°F</div>
+          <div class="todays-values" id="feels-like"></div>
+          <div class="todays-values" id="humidity-today"></div>
+          <div class="todays-values" id="max-today"></div>
+          <div class="todays-values" id="min-today"></div>
         </div>
 
         <div class="col px-1">
-          <div class="current-city" id="current-city">Austin</div>
-          <div class="col last-updated" id="current-day">Monday 11:30</div>
+          <div class="current-city" id="current-city"></div>
+          <div class="col last-updated" id="current-day"></div>
         </div>
+
+        <div class = "weather-forecast" id = "weather-forecast">
+          <div class = "row mt-5">
+            <div class = "col-2">
+              <div class = "weather-forecast-date mx-auto"> Thur </div>
+              <img class = "forecast-icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt=""> </img> 
+              <span class = "weather-forecast-max"> 18°</span>
+               <span class = "weather-forecast-min"> 12°</span>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <div class="footer p-1">
