@@ -10,6 +10,13 @@
   color: grey;
   vertical-align: top;
 }
+.description {
+  font-family: "Poppins", sans-serif;
+  text-align: right;
+  font-style: italic;
+  text-transform: capitalize;
+  font-size: small;
+}
 
 .current-temp {
   font-family: "Poppins", sans-serif;
@@ -19,6 +26,7 @@
 
 .current-city {
   font-family: "Poppins", sans-serif;
+  font-weight: bold;
   font-size: 30px;
   text-align: right;
 }
@@ -42,6 +50,7 @@
   text-align: right;
   font-size: small;
   color: grey;
+  padding-top: 5px;
 }
 
 .footer {

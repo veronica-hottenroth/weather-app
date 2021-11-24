@@ -85,6 +85,7 @@ function showTemperature(response) {
   let humidElement = document.querySelector("#humidity-today");
   let feelsElement = document.querySelector("#feels-like");
   let iconElement = document.querySelector("#icon");
+  let descriptionElement = document.querySelector("#description");
 
   let temperature = Math.round(response.data.main.temp);
   let city = response.data.name;
@@ -92,6 +93,7 @@ function showTemperature(response) {
   let min = Math.round(response.data.main.temp_min);
   let humidity = Math.round(response.data.main.humidity);
   let feelsLike = Math.round(response.data.main.feels_like);
+  let description = response.data.weather[0].description;
 
   tempElement.innerHTML = `${temperature}°F`;
   cityElement.innerHTML = `${city}`;
@@ -99,6 +101,7 @@ function showTemperature(response) {
   minTempElement.innerHTML = `Low ${min}°F`;
   humidElement.innerHTML = `Humidity: ${humidity}%`;
   feelsElement.innerHTML = `Feels like ${feelsLike}°F`;
+  descriptionElement.innerHTML = `${description}`;
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
