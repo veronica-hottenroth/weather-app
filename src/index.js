@@ -46,7 +46,7 @@ function showTemperature(response) {
   let feelsLike = Math.round(response.data.main.feels_like);
 
   tempElement.innerHTML = `${temperature}°F`;
-  cityElement.innerHTML = `${city};`;
+  cityElement.innerHTML = `${city}`;
   maxTempElement.innerHTML = `High ${max}°F`;
   minTempElement.innerHTML = `Low ${min}°F`;
   humidElement.innerHTML = `Humidity: ${humidity}%`;
